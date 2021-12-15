@@ -94,10 +94,6 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback<ResponseLocation>() {
             @Override
             public void onResponse(Call<ResponseLocation> call, Response<ResponseLocation> response) {
-                Log.e("LocSt", "onResponse: " + response.body().getStatus());
-                Log.e("Loc", "onResponse: " + response.body().getLocationList());
-                Log.e("Lo", "onResponse: " + response.body().getVehicleInfo());
-                Log.e("Lop", "onResponse: " + response.body().getVehiclePriceRange());
                 makeAdapter = new MakeAdapter((Context) MainActivity.this, response.body().getLocationList());
                 recyclerView.setAdapter(makeAdapter);
 
