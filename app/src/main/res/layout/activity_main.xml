@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RadioGroup
+        android:id="@+id/rgCars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <RadioButton
+        android:id="@+id/btnMake"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text="Make"
+
+        />
+    <RadioButton
+        android:id="@+id/btnModel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text="Model"
+
+        />
+
+    <RadioButton
+        android:id="@+id/btnVariant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text="Variant"
+
+        />
+    <RadioButton
+        android:id="@+id/btnLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text="Location"
+
+        />
+
+
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        />
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvRecycle"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       />
+
+
+
+
+</LinearLayout>
+
